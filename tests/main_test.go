@@ -2,7 +2,7 @@ package tests
 
 import (
 	"fmt"
-	"github.com/1107012776/rookie-learning-english/dictionary"
+	"github.com/1107012776/Rookie-learning-English/dictionary"
 	assert "github.com/magiconair/properties/assert"
 	"testing"
 )
