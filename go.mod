@@ -1,4 +1,4 @@
-module github.com/1107012776/Rookie-learning-English
+module github.com/1107012776/Rookie-Learning-English
 
 go 1.17
 
