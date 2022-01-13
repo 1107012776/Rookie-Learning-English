@@ -8,8 +8,7 @@ package dictionary
 看结构体
 */
 type See struct {
-	content string
-	err     error
+	Base
 }
 
 func (obj *See) I() *See {
@@ -39,10 +38,6 @@ func (obj *See) Reading(name string) *See {
 func (obj *See) Yesterday(str string) *See {
 	obj.content += " yesterday " + str
 	return obj
-}
-
-func (obj *See) Response() (string, error) {
-	return obj.content, obj.err
 }
 
 func (obj *See) Morning() *See {

@@ -41,3 +41,16 @@ func Test_ISeeMorning(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
+
+func Test_ISeeNoon(t *testing.T) {
+	var obj dictionary.See
+	obj.Noon().I().Saw("a boy").Reading("a book")
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+	obj.Reset()
+	obj.I().Saw("a boy").Reading("a book").Noon()
+	str, err = obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+}
