@@ -4,15 +4,19 @@ package dictionary
 介绍结构体
 */
 type Introduce struct {
+	content string
+	err     error
 }
 
 func (obj *Introduce) A_Person(name string) {
 
 }
 
-/**
-介绍自己
-*/
-func (obj *Introduce) Yourself(name string) (string, error) {
-	return "My name is " + name, nil
+func (obj *Introduce) MyName(name string) *Introduce {
+	obj.content = "My name is " + name
+	return obj
+}
+
+func (obj *Introduce) Response() (string, error) {
+	return obj.content, obj.err
 }
