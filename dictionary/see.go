@@ -17,6 +17,11 @@ func (obj *See) I() *See {
 	return obj
 }
 
+func (obj *See) Saw(name string) *See {
+	obj.content += " saw " + name
+	return obj
+}
+
 func (obj *See) See(name string) *See {
 	obj.content += " see " + name
 	return obj
@@ -24,6 +29,11 @@ func (obj *See) See(name string) *See {
 
 func (obj *See) Reading(name string) *See {
 	obj.content += " reading " + name
+	return obj
+}
+
+func (obj *See) Yesterday(str string) *See {
+	obj.content += " yesterday " + str
 	return obj
 }
 

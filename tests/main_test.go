@@ -22,3 +22,11 @@ func Test_ISee(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
+
+func Test_ISeeYesterday(t *testing.T) {
+	var obj dictionary.See
+	obj.I().Saw("a boy").Reading("a book").Yesterday("")
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+}
