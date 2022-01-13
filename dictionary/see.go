@@ -47,9 +47,18 @@ func (obj *See) Response() (string, error) {
 
 func (obj *See) Morning() *See {
 	if obj.content == "" {
-		obj.content = " In the Morning"
+		obj.content = " In the morning"
 		return obj
 	}
-	obj.content += " this Morning"
+	obj.content += " this morning"
+	return obj
+}
+
+func (obj *See) Noon() *See {
+	if obj.content == "" {
+		obj.content = " At noon"
+		return obj
+	}
+	obj.content += " at noon"
 	return obj
 }
