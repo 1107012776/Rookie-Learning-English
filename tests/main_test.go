@@ -8,7 +8,8 @@ import (
 )
 
 func Test_MyNameIsLys(t *testing.T) {
-	str, err := dictionary.Introduce_Yourself("YuShanLin")
+	var introduce dictionary.Introduce
+	str, err := introduce.Yourself("YuShanLin")
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
