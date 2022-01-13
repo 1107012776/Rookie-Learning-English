@@ -30,3 +30,13 @@ func Test_ISeeYesterday(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
+
+func Test_ISeeMorning(t *testing.T) {
+	var obj dictionary.See
+	str, _ := obj.Response()
+	fmt.Println(str)
+	obj.Morning().I().Saw("a boy").Reading("a book")
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+}

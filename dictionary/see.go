@@ -13,7 +13,11 @@ type See struct {
 }
 
 func (obj *See) I() *See {
-	obj.content = "I"
+	if obj.content == "" {
+		obj.content = " I"
+	} else {
+		obj.content += " I"
+	}
 	return obj
 }
 
@@ -39,4 +43,13 @@ func (obj *See) Yesterday(str string) *See {
 
 func (obj *See) Response() (string, error) {
 	return obj.content, obj.err
+}
+
+func (obj *See) Morning() *See {
+	if obj.content == "" {
+		obj.content = " In the Morning"
+		return obj
+	}
+	obj.content += " this Morning"
+	return obj
 }
