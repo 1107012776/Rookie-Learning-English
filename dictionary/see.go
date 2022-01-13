@@ -23,7 +23,7 @@ func (obj *See) See(name string) *See {
 }
 
 func (obj *See) Reading(name string) *See {
-	obj.content += " Reading " + name
+	obj.content += " reading " + name
 	return obj
 }
 
