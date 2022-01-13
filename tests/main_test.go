@@ -13,3 +13,11 @@ func Test_MyNameIsLys(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
+
+func Test_ISee(t *testing.T) {
+	var obj dictionary.See
+	obj.I().See("a boy").Reading("a book")
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+}
