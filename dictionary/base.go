@@ -14,3 +14,19 @@ func (obj *Base) Reset() *Base {
 func (obj *Base) Response() (string, error) {
 	return obj.content, obj.err
 }
+
+/**
+点号
+*/
+func (obj *Base) Dot() *Base {
+	obj.content += "."
+	return obj
+}
+
+/**
+逗号
+*/
+func (obj *Base) Comma() *Base {
+	obj.content += ","
+	return obj
+}

@@ -36,7 +36,7 @@ func Test_ISeeMorning(t *testing.T) {
 	var obj dictionary.See
 	str, _ := obj.Response()
 	fmt.Println(str)
-	obj.Morning().I().Saw("a boy").Reading("a book")
+	obj.Morning().I().Saw("a boy").Reading("a book.") // In the morning I saw a boy reading a book.
 	str, err := obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
@@ -44,12 +44,12 @@ func Test_ISeeMorning(t *testing.T) {
 
 func Test_ISeeNoon(t *testing.T) {
 	var obj dictionary.See
-	obj.Noon().I().Saw("a boy").Reading("a book")
+	obj.Noon().I().Saw("a boy").Reading("a book.") // At noon I saw a boy reading a book.
 	str, err := obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 	obj.Reset()
-	obj.I().Saw("a boy").Reading("a book").Noon()
+	obj.I().Saw("a boy").Reading("a book").Noon().Dot() // I saw a boy reading a book at noon.
 	str, err = obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
