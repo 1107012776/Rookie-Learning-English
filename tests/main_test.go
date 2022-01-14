@@ -71,9 +71,17 @@ func Test_YouShould(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 	obj.Reset()
-	obj.YouShould("something like").Dot() //You should see something like.  你应该看到类似的东西
+	obj.YouShould("something like that").Dot() //You should see something like that.  你应该看到类似的东西
 	str, err = obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 
+}
+
+func Test_AddConfigurationData(t *testing.T) {
+	var obj dictionary.Add
+	obj.AddConfigurationData("php.ini").Dot() //Add configuration data on php.ini. 在 php.ini 上添加配置数据
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
 }
