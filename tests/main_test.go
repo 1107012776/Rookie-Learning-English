@@ -10,7 +10,7 @@ import (
 
 func Test_MyNameIsLys(t *testing.T) {
 	var obj dictionary.Introduce
-	obj.MyName("YuShanLin")
+	obj.MyName("YuShan Lin.")
 	str, err := obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
