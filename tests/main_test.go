@@ -55,7 +55,7 @@ func Test_ISeeNoon(t *testing.T) {
 	assert.Equal(t, err == nil, true)
 }
 
-func Test_I_am(t *testing.T) {
+func Test_I_Am(t *testing.T) {
 	var obj dictionary.Introduce
 	obj.I_Am("a developer")
 	str, err := obj.Response()
