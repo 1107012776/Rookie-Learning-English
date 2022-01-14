@@ -1,5 +1,6 @@
 package tests
 
+//https://translate.google.cn/  谷歌翻译
 //https://write.youdao.com/edit/#/index?from=index_top  翻译
 import (
 	"fmt"
