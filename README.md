@@ -19,8 +19,8 @@ func Test_I_Am(t *testing.T) {
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 	obj.Reset()
-	obj.MyName("Yushan Lin")  //My name is Yushan Lin.
-	str, err := obj.Response()
+	obj.MyName("Yushan Lin.")  //My name is Yushan Lin.
+	str, err = obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 }
