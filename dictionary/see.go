@@ -57,3 +57,11 @@ func (obj *See) Noon() *See {
 	obj.content += " at noon"
 	return obj
 }
+
+/**
+你应该看
+*/
+func (obj *See) YouShould(str string) *See {
+	obj.content = "You should see " + str
+	return obj
+}

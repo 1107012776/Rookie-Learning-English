@@ -63,3 +63,17 @@ func Test_I_Am(t *testing.T) {
 	assert.Equal(t, err == nil, true)
 
 }
+
+func Test_YouShould(t *testing.T) {
+	var obj dictionary.See
+	obj.YouShould("a developer").Dot() //You should see a developer. 你应该看到一个开发者
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+	obj.Reset()
+	obj.YouShould("something like").Dot() //You should see something like.  你应该看到类似的东西
+	str, err = obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+
+}
