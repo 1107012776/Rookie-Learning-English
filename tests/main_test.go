@@ -1,7 +1,7 @@
 package tests
 
 //https://translate.google.cn/  谷歌翻译
-//https://write.youdao.com/edit/#/index?from=index_top  翻译
+//https://write.youdao.com/edit/#/index?from=index_top  翻译 有道写作
 import (
 	"fmt"
 	"github.com/1107012776/Rookie-Learning-English/dictionary"
