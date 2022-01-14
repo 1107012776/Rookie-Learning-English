@@ -19,7 +19,7 @@ func (obj *Base) Response() (string, error) {
 点号
 */
 func (obj *Base) Dot() *Base {
-	obj.content += "."
+	obj.content += ". "
 	return obj
 }
 
@@ -27,6 +27,6 @@ func (obj *Base) Dot() *Base {
 逗号
 */
 func (obj *Base) Comma() *Base {
-	obj.content += ","
+	obj.content += ", "
 	return obj
 }
