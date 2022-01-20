@@ -5,6 +5,7 @@ package tests
 import (
 	"fmt"
 	"github.com/1107012776/Rookie-Learning-English/dictionary"
+	"github.com/1107012776/Rookie-Learning-English/dictionary/animal"
 	assert "github.com/magiconair/properties/assert"
 	"testing"
 )
@@ -12,6 +13,14 @@ import (
 func Test_Shark(t *testing.T) {
 	var obj dictionary.ThereBe
 	obj.ThereAre("some sharks").Dot() //那里有一些鲨鱼。
+	str, err := obj.Response()
+	fmt.Println(str)
+	assert.Equal(t, err == nil, true)
+}
+
+func Test_Sharks(t *testing.T) {
+	var obj animal.Shark
+	obj.There_are_some_sharks().Dot() //那里有一些鲨鱼。
 	str, err := obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)

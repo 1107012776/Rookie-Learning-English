@@ -9,6 +9,6 @@ type Shark struct {
 }
 
 func (obj *Shark) There_are_some_sharks() *Shark {
-	obj.SetContent("There are some sharks.") //这有鲨鱼
+	obj.SetContent("There are some sharks") //这有鲨鱼
 	return obj
 }
