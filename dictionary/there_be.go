@@ -1,5 +1,6 @@
 package dictionary
 
+//ThereBe Sentence Patterns  (ThereBe 句型)
 type ThereBe struct {
 	Base
 }
