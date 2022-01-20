@@ -13,9 +13,9 @@ type See struct {
 
 func (obj *See) I() *See {
 	if obj.content == "" {
-		obj.content = " I"
+		obj.content = "I"
 	} else {
-		obj.content += " I"
+		obj.content += "I"
 	}
 	return obj
 }
@@ -42,7 +42,7 @@ func (obj *See) Yesterday(str string) *See {
 
 func (obj *See) Morning() *See {
 	if obj.content == "" {
-		obj.content = " In the morning"
+		obj.content = "In the morning"
 		return obj
 	}
 	obj.content += " this morning"
@@ -51,7 +51,7 @@ func (obj *See) Morning() *See {
 
 func (obj *See) Noon() *See {
 	if obj.content == "" {
-		obj.content = " At noon"
+		obj.content = "At noon"
 		return obj
 	}
 	obj.content += " at noon"
