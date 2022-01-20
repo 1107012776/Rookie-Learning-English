@@ -14,12 +14,12 @@ import (
 )
 func Test_I_Am(t *testing.T) {
 	var obj dictionary.Introduce
-	obj.I_Am("a developer.")  //I am a developer.
+	obj.I_Am("a developer").Dot()  //I am a developer.
 	str, err := obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)
 	obj.Reset()
-	obj.MyName("Yushan Lin.")  //My name is Yushan Lin.
+	obj.MyName("Yushan Lin").Dot()  //My name is Yushan Lin.
 	str, err = obj.Response()
 	fmt.Println(str)
 	assert.Equal(t, err == nil, true)

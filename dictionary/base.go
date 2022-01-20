@@ -5,6 +5,16 @@ type Base struct {
 	err     error
 }
 
+func (obj *Base) SetContent(content string) *Base {
+	obj.content = content
+	return obj
+}
+
+func (obj *Base) SetError(err error) *Base {
+	obj.err = err
+	return obj
+}
+
 func (obj *Base) Reset() *Base {
 	obj.content = ""
 	obj.err = nil
